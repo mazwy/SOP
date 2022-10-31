@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if (( $# != 0 )) 
+then
+	echo "Need 1 directory as argument"
+	exit 1
+fi
+
+if [ -d $1 ]
+then
+	cd $1
+fi
+
+ls
+
+count=0
+for item in `ls`
+do
+	(( count++ ))
+	# if file -> increase file count etc
+done
+
+echo "Number of all elements: " $count
+

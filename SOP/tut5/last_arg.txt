@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for arg in `ls /dev`
+do
+	if [ -b $arg ] ;
+	then
+		echo $arg
+fi
+done

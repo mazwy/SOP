@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for line in `ls -l /etc | grep ^.r`
+do
+	for item in $line;
+	do
+		:
+	done
+	echo $item | grep ^i.*a.*[sd]$
+done

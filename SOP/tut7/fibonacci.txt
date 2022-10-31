@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function fibonacci () {
+	a=0
+	b=1
+	
+	for (( i=0 ; i < $1 ; i++ ))
+	do
+		echo $a
+		next=$((a+b))
+		a=$b
+		b=$next
+	done	
+}
+
+fibonacci $1

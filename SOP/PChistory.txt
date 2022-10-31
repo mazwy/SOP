@@ -1,0 +1,486 @@
+    1  pwd
+    2  dir
+    3  cd ..
+    4  dir
+    5  pwd
+    6  dir
+    7  pwd
+    8  ls
+    9  man dir
+   10  man ls
+   11  man dir
+   12  man man
+   13  mkdir SOP
+   14  cd SOP
+   15  cd ..
+   16  ls
+   17  cd SOP
+   18  pwd
+   19  man ls
+   20  cd ..
+   21  ls -d
+   22  dir
+   23  cd SOP
+   24  ls -d
+   25  cd .
+   26  ls -l SOP
+   27  cd ..
+   28  ls -l SOP
+   29  ls -l WSI
+   30  cd SOP
+   31  ls -a
+   32  ls -la
+   33  touch a.txt
+   34  ls -la
+   35  nano a.txt
+   36  ls -la
+   37  man boto
+   38  man nano
+   39  ls -d
+   40  mkdir test1
+   41  ls -d test1
+   42  ls
+   43  ls -d test1/
+   44  cd 
+   45  cd SOP/test1/
+   46  cd 
+   47  ls -a .*
+   48  cd .bashrc
+   49  nano .bashrc
+   50  ls
+   51  nano .bashrc
+   52  history | less
+   53  history | ,pre
+   54  history | more
+   55  cs
+   56  cl
+   57  clear
+   58  cd SOP/
+   59  cd ..
+   60  nano .bashrc
+   61  source ~/.bashrc
+   62  nano .bashrc
+   63  cd SOP
+   64  man mv
+   65  ls
+   66  mv a.txt b.txt
+   67  ls
+   68  ls -l
+   69  export PS1="\e[0;35m[\u@\h \W]\$ \e[m "
+   70  ls
+   71  ls =l
+   72  ls -l
+   73  ls -d
+   74  ls -ld test1/
+   75  cd
+   76  cd SOP
+   77  echo b.txt
+   78  echo $b.txt
+   79  echo John Doe > b.txt
+   80  man cat
+   81  cat b.txt
+   82  man echo
+   83  dir
+   84  pwd
+   85   cd SOP/
+   86  ls
+   87  mkdir tut2
+   88  ls
+   89  ls -l
+   90  cd tut2/
+   91  ls -l
+   92  ls -a
+   93  who
+   94  whoami
+   95  who | wc -l
+   96  man wc
+   97  man head
+   98  who | head
+   99  who | head -n 6
+  100  who
+  101  who | tail 
+  102  who | wc -n 8
+  103  who | wc -l 8
+  104  man wc
+  105  who | head -n 9 | tail -n 2
+  106  who | tail -n 10 | head -n 3
+  107  who
+  108  who | wc -n 1
+  109  man cut
+  110  who | cut -c 
+  111  who | cut -c 1-6
+  112  who | cut -c 1 -6
+  113  who | cut -c 1-8
+  114  who | cut -c 1-10
+  115  who | cut -c 1-9
+  116  man cut
+  117  who | cut -f 1
+  118  who | cut -f
+  119  who | cut -f 1 -d " "
+  120  man tr
+  121  who | head -n 3 | tr s S
+  122  who | head -n 3 | tr [s,Z
+  123  who | head -n 3 | tr [s,a] [S,A]
+  124  who | head -n 3 | tr [s,a] [X]
+  125  who | head -n 3 | tr [s,a] X
+  126  who | head -n 3| tr -s " " | cut -f 2
+  127  who | head -n 3| tr -s " " | cut -f 2 -d " "
+  128  who | head -n 3| tr -s " " | cut -fd " "
+  129  who | head -n 3| tr -s " " | cut -f -d " "
+  130  who | head -n 3| tr -s " " | cut -f 1-2 -d " "
+  131  who | head -n 3| tr -s " " | cut -f 3-4 -d " "
+  132  who | head -n 3| tr -s " " | tr " " ";"
+  133  who | head -n 3 | tr -s " " | tr " " ";"
+  134  who | head -n 3 | tr -s " " | tr " " ";" > users.csv
+  135  echo users.csv 
+  136  cat users.csv 
+  137  who | head -n  | tr -s " " | tr " " ";" > users.csv
+  138  who | head | tr -s " " | tr " " ";" > users.csv
+  139  cat users.csv 
+  140  head -n 3 users.csv | tail -n 1
+  141  cat users.csv | head -n 3 | tail -n 1
+  142  cat users.csv | wc -l
+  143  wc -l users.csv
+  144  man tr
+  145  who | head -n 3 | tr -s " " | tr -d "()"
+  146  man grep
+  147  who | grep ^s
+  148  who | grep pl\)$
+  149  who | grep pl\)
+  150  who | grep -v pl\)
+  151  who 
+  152  who | grep [a-zA-Z]
+  153  who | grep ^[a-zA-Z]
+  154  who | grep "^[a-z][0-9]* \{3\}"
+  155  who | grep "^[a-z][0-9]* \{3\}pts/[0-9]\+"
+  156  who | grep -o "^[a-z][0-9]* \{3\}pts/[0-9]\+"
+  157  echo "John Doe" | grep o$
+  158  echo "John Doe" | grep e$
+  159  pwd
+  160  cd /tmp
+  161  ls -l
+  162  ls
+  163  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  164  brew install wget
+  165  sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+  166  pwd
+  167  ls
+  168  who
+  169  cd SOP/
+  170  ls
+  171  mkdir tut3
+  172  rm -d tut3
+  173  ls
+  174  mkdir tut3 && cd tut3
+  175  ls
+  176  ls -l
+  177  ls -a
+  178  ls -al
+  179  ls -la
+  180  echo aabbccaabbcc | grep -ca aa
+  181  echo aabbccaabbcc | grep -co aa
+  182  echo aabbccaabbcc | grep -oc
+  183  echo aabbccaabbcc | grep -oc aa
+  184  echo aabbccaabbcc | grep -o aa
+  185  echo aabbccaabbcc | grep -o aa | wc -l
+  186  echo aabbccaabbcc && grep -o aa && wc -l
+  187  echo -e "aabbccddaabbcc\naabbcc"
+  188  echo -e "aabbccddaabbcc\naabbcc" | grep --color aa
+  189  echo -e "aabbccddaabbcc\naabbcc" | grep --color aa -c
+  190  echo -e "aabbccddaabbcc\naabbcc" | grep --color aa | wc -l
+  191  echo -e "aabbccddaabbcc\naabbcc" | grep --color -o aa | wc -l
+  192  echo -e "aabbccddaabbcc\naabbcc" | grep -o aa | wc -l
+  193  echo aabbccaabbcc | grep --color ^.{2}b{2}
+  194  echo aabbccaabbcc | grep --color ^(b{2})
+  195  echo aabbccaabbcc | grep --color ^aab
+  196  echo aabbccaabbcc | grep --color ^..b
+  197  echo {c..v}
+  198  echo [c-v]
+  199  echo {5..11}{abc,def}
+  200  echo {5..1}{abc,def}
+  201  echo ABC{5..11}.{abc,def}
+  202  touch ABC{5..11}.{abc,def} 
+  203  ls
+  204  touch ABC{5..11}.{abc,txt} 
+  205  ls *.txt
+  206  ls 
+  207  ls *[19].txt
+  208  ls ABC?.txt
+  209  ls *[^19].txt
+  210  ls *[^1^9].txt
+  211  ls
+  212  ls -1
+  213  ls -1 | grep *{3}[^19]\..*
+  214  ls -1 | grep .*[^19]\..*
+  215  ls -1 | grep ^.*[^19]\..*
+  216  ls -1 | grep -v ^.*[^19]\..*
+  217  ls -1 | grep -v "^.*[^19]\..*"
+  218  mkdir testdir
+  219  cp *.txt testdir/
+  220  ls
+  221  mkdir testdir/dir2
+  222  ls
+  223  ls -l 
+  224  ls -R
+  225  help find
+  226  man find
+  227  history
+  228  find . -type f
+  229  find . --type f
+  230  find . --type=f
+  231  find . -type=f
+  232  find . -type f
+  233  find . -type fd
+  234  find . -type d
+  235  find . -type f -name"*.txt"
+  236  find . -type f -name "*.txt"
+  237  find . -type d -name "*test*"
+  238  find . -type d -name "*dir"
+  239  find . -type d -name "*dir*"
+  240  ls -l a.txt
+  241  ls a 2> a.txt
+  242  cat a.txt
+  243  # 0 ... sdin
+  244  # 1 ... sdout
+  245  # 2 ... stderr
+  246  # ^ std instead of sd
+  247  history
+  248  cls
+  249  clear
+  250  cat a.txt > b.txt
+  251  cat b.txt 
+  252  cat a > b.txt
+  253  cat b.txt 
+  254  echo Hello > a.txt
+  255  cat a.txt
+  256  wc -l < a.txt
+  257  wc -l 0< a.txt
+  258  echo Hello World error > /dev/stderr
+  259  echo Hello World error > /dev/stdin
+  260  echo Hello World error > /dev/stderr
+  261  echo Hello World non-error > /dev/stdout
+  262  a=AAA
+  263  $a
+  264  echo $a
+  265  who
+  266  echo "\$USER   John"
+  267  echo "$USER   John"
+  268  echo '$USER   John'
+  269  echo \$USER'   John'
+  270  echo $USER'   John'
+  271  unset a
+  272  echo $a
+  273  $b
+  274  echo $b
+  275  echo $a
+  276  echo {1..20} | grep -l
+  277  echo {1..20} | grep -o
+  278  echo {1..20} | grep -o [0-9]*
+  279  echo {1..20} | grep -o [0-9]* | sort
+  280  man sort
+  281  echo {a..g} | grep -o [a-z]* | sort
+  282  echo {a..g} | grep -o [a-z]*
+  283  echo {a..g} | grep -o "[a-z]*"
+  284  echo {a..g} | grep -o "[a-z]*" | sort
+  285  man sort
+  286  echo {1..20} | grep -o [0-9]* | sort -g
+  287  echo {1..20} | grep -o [0-9]* | sort -n
+  288  echo -e "10\n2.1"
+  289  echo -e "10\n2.1" | sort
+  290  echo -e "10\n2.1" | sort -n
+  291  echo -e "10\n2.1" | sort -g
+  292  man sort
+  293  echo -e "10\n2\.1" | sort -g
+  294  echo -e "5e10\n6.1" | sort -g
+  295  echo -e "5e10\n6.1" | sort -n
+  296  who | head | sort -k 1
+  297  who | head | sort -k 
+  298  who | head | sort -k 1.2
+  299  who | head | sort -k 1.2 -n
+  300  who | head | sort -nk 1.2
+  301  who | head | sort -gk 1.2
+  302  who | head | grep "^.[0-9]*"
+  303  who | head | grep "^.[0-9]+"
+  304  who | head | grep "^.[0-9]\+
+  305  who | head | grep "^.[0-9]\+"
+  306  who | head | grep "^.[0-9]\+" | sort -n
+  307  who | head | grep "^.[0-9]\+" | sort -k 1.2
+  308  echo {1..5}
+  309  seq 1 5
+  310  seq a z
+  311  man seq
+  312  seq 1 5 sort -R
+  313  seq 1 5 | sort -R
+  314  man sort
+  315  seq 1 5 | sort -nr
+  316  echo -e "1\n2\n1\n0"
+  317  echo -e "1\n2\n1\n0" | sort
+  318  echo -e "1\n2\n1\n0" | sort -u
+  319  echo -e "1\n2\n1\n0" | sort | uniq
+  320  echo -e "1\n2\n1\n0" | sort -ur
+  321  echo -e "1\n2\n1\n0" | sort -ru
+  322  read a
+  323  echo $a
+  324  ls -l
+  325  cat a.txt
+  326  read a.txt
+  327  read h < a.txt
+  328  echo $h
+  329  read h
+  330  cat a.txt | read aa
+  331  echo $aa
+  332  # after | it is a subproccess
+  333  cat a.txt | { read aa; echo $aa; }
+  334  # { } is grouping commands
+  335  echo $aa
+  336  for i in {1..5} ; do echo "i=$i"
+  337  for i in {1..5} ; do echo "i=$i" ; done
+  338  for i in 1 2 3 4 6 AAA ; do echo "i=$i' ; done
+  339  for i in 1 2 3 4 6 AAA ; do echo "i=$i" ; done
+  340  for ((i=0; i < 6; i++)) ; do echo "i=$i" ; done
+  341  i=0
+  342  while ((i < 10)) ; do echo "i = $i" ; i++ ; done
+  343  while ((i < 10)) ; do echo "i = $i" ; ((i++))  ; done
+  344  exit
+  345  who
+  346  seq 1 4
+  347  s1='seq 1 4'
+  348  $s1
+  349  echo $s1
+  350  s1=`seq 1 4`
+  351  echo $s1
+  352  $s1
+  353  ls
+  354  cd SOP/tut4
+  355  cd SOP | mkdir tut4 | cd tut4
+  356  cd SOP | mkdir tut4
+  357  cd SOP && mkdir tut4
+  358  ls
+  359  cd tut4
+  360  echo {a..d}{1..5}
+  361  echo {a..d}{1..5} > data.txt
+  362  for word in $list ; do echo $word; done
+  363  cat data.txt
+  364  echo aaa bbb ccc >> data.txt
+  365  cat data.txt
+  366  list=`cat data.txt`
+  367  echo $list
+  368  for word in $list ; do echo $word; done
+  369  man $?
+  370  $?
+  371  echo $?
+  372  man man
+  373  echo $?
+  374  history
+  375  read a
+  376  $a
+  377  read a
+  378  $a
+  379  echo $a
+  380  read a
+  381  echo $?
+  382  echo $a
+  383  if read a ; then echo read OK ; else read not OK ; fi
+  384  echo $a
+  385  if read a ; then echo read OK ; else read not OK ; fi
+  386  if read a ; then echo read OK ; else echo not OK ; fi
+  387  while read line ; do echo "Entered: $line" ; done
+  388  cat data.txt
+  389  read line1 < data.txt
+  390  echo $line1
+  391  while read line ; do echo "entered: $line"; done < data.txt
+  392  man vim
+  393  man vi
+  394  vi hw.sh
+  395  ls -l
+  396  ./hw.sh
+  397  cat ./hw.sh
+  398  echo $a
+  399  vi hw.sh
+  400  ./hw.sh
+  401  echo $a
+  402  vi hw.sh
+  403  ./hw.sh
+  404  vi hw.sh
+  405  echo ./hw.sh
+  406  cat ./hw.sh
+  407  echo $a
+  408  $$
+  409  echo $$
+  410  echo $a
+  411  echo $$
+  412  vi hw.sh
+  413  ./hw.sh
+  414  export a
+  415  ./hw.sh
+  416  man export
+  417  man declare
+  418  unset a
+  419  echo $a
+  420  echo $$
+  421  declare -x a
+  422  echo $a
+  423  a=SSSS
+  424  ./hw.sh
+  425  vi hw.sh
+  426  ./hw.sh
+  427  echo $a
+  428  vi s1.sh
+  429  ./s1.sh
+  430  ./s1.sh jewn jnwrn n n23 3 456 6
+  431  cat ./s1.sh
+  432  vi s1.sh
+  433  ./s1.sh
+  434  vi s1.sh
+  435  ./s1.sh
+  436  ./s1.sh jewn jnwrn n n23 3 456 6
+  437  vi s1.sh
+  438  cp s1.sh s2.sh
+  439  vi s2.sh
+  440  ./s2.sh
+  441  ./s2.sh < data.txt
+  442  ./s2.sh qjrng njrgnj rngqj
+  443  vi s2.sh
+  444  ./s2.sh
+  445  vi s2.sh
+  446  vi s3.sh
+  447  vi s2.sh
+  448  vi s3.sh
+  449  ./s3.sh
+  450  vi s3.sh
+  451  vi s2.sh
+  452  vi s3.sh
+  453  ./s3.sh
+  454  vi s3.sh
+  455  ./s3.sh
+  456  vi s3.sh
+  457  ./s3.sh jnjernf nrnrn nn n
+  458  exit
+  459  who
+  460  logout
+  461  ls
+  462  cd SOP
+  463  cd ..
+  464  cd public_html
+  465  cd SOP
+  466  mkdir HW
+  467  cd HW
+  468  vim s5.sh
+  469  ./s5.sh
+  470  vim s5.sh
+  471  ./s5.sh
+  472  vim s5.sh
+  473  ./s5.sh
+  474  vim s5.sh
+  475  ./s5.sh
+  476  vim s5.sh
+  477  ./s5.sh
+  478  vim s5.sh
+  479  ./s5.sh
+  480  vim s5.sh
+  481  ./s5.sh
+  482  who
+  483  pwd
+  484  ls
+  485  cd SOP
+  486  history > PChistory.txt

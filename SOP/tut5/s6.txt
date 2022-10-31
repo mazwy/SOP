@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for line in `ls -l /dev | grep ^b`
+do
+	for item in $line;
+	do
+		:
+	done
+	echo $item | grep ^..[0-9]$
+done
